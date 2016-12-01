@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ios-9_4_thumb800.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qa0-oY-fb8">
+                                <rect key="frame" x="0.0" y="124" width="320" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qa0-oY-fb8" secondAttribute="height" multiplier="16:15" id="59H-lw-Dvn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfb-9M-zfZ">
+                                <rect key="frame" x="129" y="538" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYp-3J-gsD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-6V-wRl">
+                                <rect key="frame" x="20" y="28" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROX-Lc-zSO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-k1-In3">
+                                <rect key="frame" x="245" y="33" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sFx-Bc-ESg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iz0-6V-wRl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0bH-Yw-ssj"/>
+                            <constraint firstItem="uc8-k1-In3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3It-Q0-6uh"/>
+                            <constraint firstItem="qa0-oY-fb8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DCd-5f-bwW"/>
+                            <constraint firstItem="qa0-oY-fb8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DO9-bl-bmw"/>
+                            <constraint firstItem="Pfb-9M-zfZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPi-B6-R5H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qa0-oY-fb8" secondAttribute="trailing" constant="-20" id="TDF-3b-wh2"/>
+                            <constraint firstItem="Iz0-6V-wRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TOa-WK-V4S"/>
+                            <constraint firstItem="uc8-k1-In3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dab-qy-Wpw"/>
+                            <constraint firstItem="qa0-oY-fb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hcB-24-Vty"/>
+                            <constraint firstItem="Pfb-9M-zfZ" firstAttribute="top" secondItem="qa0-oY-fb8" secondAttribute="bottom" constant="94" id="ji5-1d-bz8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pfb-9M-zfZ" secondAttribute="bottom" id="o9m-dq-b7C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageDisplay" destination="qa0-oY-fb8" id="Od8-IF-ep9"/>
+                        <outlet property="login" destination="Iz0-6V-wRl" id="NTf-bd-Kqs"/>
+                        <outlet property="logout" destination="uc8-k1-In3" id="aL0-AR-ZYB"/>
+                        <outlet property="refresh" destination="Pfb-9M-zfZ" id="A9I-4e-OIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ios-9_4_thumb800.jpg" width="800" height="450"/>
+    </resources>
+</document>
