@@ -8,6 +8,6 @@ Networking-SecurityiOSCoursework Repository contains three directories
  Each directory contains iOS application code for assignment / project for the 4 week coursework. 
  
 To clone the entire repository, navigate to your preferred location and use 
-# git clone https://github.com/abdkareem/Networking-SecurityiOSCoursework
+git clone https://github.com/abdkareem/Networking-SecurityiOSCoursework
 
 The cloned repository contains three subdirectories, each directory contains a  .xcodeproj which is main file to open the project contained in subdirectory using Xcode IDE.
